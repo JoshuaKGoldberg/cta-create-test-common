@@ -1,0 +1,43 @@
+{
+	"author": {
+		"email": "npm@joshuakgoldberg.com",
+		"name": "Josh Goldberg ✨"
+	},
+	"description": "Testing the create engine for CTA with the Common base/preset",
+	"devDependencies": {
+		"@eslint/js": "latest",
+		"eslint": "latest",
+		"husky": "latest",
+		"lint-staged": "latest",
+		"prettier": "latest",
+		"tsup": "latest",
+		"typescript": "latest",
+		"typescript-eslint": "latest"
+	},
+	"files": [
+		"README.md",
+		"lib/",
+		"package.json"
+	],
+	"lint-staged": {
+		"*": "prettier --ignore-unknown --write"
+	},
+	"main": "./lib/index.js",
+	"name": "cta-create-test-common",
+	"publishConfig": {
+		"provenance": true
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/JoshuaKGoldberg/cta-create-test-common"
+	},
+	"scripts": {
+		"build": "tsup",
+		"format": "prettier .",
+		"lint": "eslint . --max-warnings 0",
+		"prepare": "husky",
+		"tsc": "tsc"
+	},
+	"type": "module",
+	"version": "0.0.0"
+}
